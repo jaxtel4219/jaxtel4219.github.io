@@ -21,11 +21,13 @@ $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
+            // scrollTop: $($anchor.attr('href')).offset().top
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
 });
+
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
@@ -53,7 +55,7 @@ function init() {
         center: new google.maps.LatLng(36.174465, -86.767960), // Nashville
 
         // Disables the default Google Maps UI components
-        disableDefaultUI: true,
+        disableDefaultUI: false,
         scrollwheel: false,
         draggable: false,
 
@@ -177,7 +179,7 @@ function init() {
     map = new google.maps.Map(mapElement, mapOptions);
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    var image = 'img/map-marker3.png';
+    var image = 'img/map-marker.png';
     var myLatLng = new google.maps.LatLng(36.207884, -86.291126);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,

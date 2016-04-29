@@ -36,6 +36,44 @@ p {
     line-height: 1.5;
 }
 
+.animated {
+    animation-delay: 2s;
+}
+
+.t1 {
+    animation-delay: 3s;
+    animation-duration: 4s;
+    animation-iteration-count: 4;
+
+}
+
+.t2 {
+    animation-delay: 8s;
+    animation-duration: 4s;
+    animation-iteration-count: 4;
+}
+
+.t3 {
+    animation-delay: 13s;    
+    animation-duration: 4s;
+    animation-iteration-count: 4;
+
+}
+
+.t4 {
+    animation-delay: 18s;    
+    animation-duration: 4s;
+    animation-iteration-count: 4;
+
+}
+
+
+
+
+
+
+
+
 @media(min-width:768px) {
     p {
         margin: 0 0 35px;
@@ -147,7 +185,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/intro-bg.jpg) no-repeat top center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -259,28 +297,40 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 100px;
+    padding: 80px 0;
 }
 
 .skills-section img {
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 10px;    
+    margin-top: 40px;
+    margin-bottom: 10px;
+    /*background-color: pink;  */
 }
-.skills-section {
-    margin: -260px 0;
+#skills {
+    width: 100%;
+    /*height: 100vh; */
+    /*background-color: hotpink;*/
 }
 
 .projects-section {
     width: 100%;
-    padding: 50px 0;
+    height: auto 0;
+    min-height: 200px;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background: url(../img/downloads-bg.jpg) no-repeat center top scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+
+#contact {
+    /*background-color: cadetblue;*/
+    /*margin-top: 50px;*/
+    width: 100%;
+    height: 100%;
 }
 
 .portfolio-box {
@@ -309,6 +359,7 @@ a:focus {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
@@ -329,13 +380,14 @@ a:focus {
 
 #map {
     width: 100%;
-    height: 200px;
-    margin-top: 100px;
+    height: 600px;
+    /*margin-top: 100px;*/
 }
 
 @media(min-width:767px) {
-    .content-section {
-        padding-top: 250px;
+    #contact {
+        padding: 100px 0;
+        /*background-color: blue;*/
     }
     
     .skills-section {
@@ -345,8 +397,6 @@ a:focus {
     .projects-section {
         padding: 100px 0;
     }    
-    
-    
     
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
         font-size: 16px;
@@ -358,8 +408,9 @@ a:focus {
     
     
     #map {
-        height: 400px;
-        margin-top: 250px;
+        width: 100%;
+        height: 600px;
+        /*margin-top: 250px;*/
     }
 }
 
