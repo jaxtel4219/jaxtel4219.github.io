@@ -41,28 +41,32 @@ p {
 }
 
 .t1 {
-    animation-delay: 3s;
-    animation-duration: 4s;
+    /*animation-delay: 3s;*/
+    animation-direction: alternate;
+    animation-duration: 2s;
     animation-iteration-count: 4;
 
 }
 
 .t2 {
-    animation-delay: 8s;
-    animation-duration: 4s;
+    /*animation-delay: 8s;*/
+    animation-direction: alternate;
+    animation-duration: 2s;
     animation-iteration-count: 4;
 }
 
 .t3 {
-    animation-delay: 13s;    
-    animation-duration: 4s;
+    /*animation-delay: 13s;    */
+    animation-direction: alternate;
+    animation-duration: 2s;
     animation-iteration-count: 4;
 
 }
 
 .t4 {
-    animation-delay: 18s;    
-    animation-duration: 4s;
+    /*animation-delay: 18s;    */
+    animation-direction: alternate;
+    animation-duration: 2s;
     animation-iteration-count: 4;
 
 }
@@ -324,7 +328,6 @@ a:focus {
     background-size: cover;
     -o-background-size: cover;
 }
-
 
 #contact {
     /*background-color: cadetblue;*/
